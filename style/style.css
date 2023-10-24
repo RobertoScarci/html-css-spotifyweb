@@ -1,0 +1,27 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Signika', sans-serif;
+}
+
+header{
+    display: flex;
+}
+
+.container-header{
+    width: 30%;
+    flex-direction: column;
+    background-color: black;
+    color: lightgray;
+    padding: 1rem 1rem;
+    line-height: 2.3rem;
+}
+
+.playlist{
+    padding-top: 1rem;
+}
