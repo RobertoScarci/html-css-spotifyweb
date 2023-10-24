@@ -54,6 +54,13 @@ header img{
     background-color: aquamarine;
 }
 
+.album{
+    width: 100%;
+    height: 300px;
+    background-color: blueviolet;
+    margin: 2rem 1rem;
+}
+
 /* Navbar */
 
 .fixed{
