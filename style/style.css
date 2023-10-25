@@ -9,14 +9,15 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.flex{
+.flex-wrap{
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* header */
 
 .container-header{
-    width: 30%;
+    width: 300px;
     flex-direction: column;
     background-color: black;
     color: lightgray;
@@ -29,23 +30,42 @@ header img{
 }
 
 .playlist{
-    padding-top: 1rem;
+    padding-top: 2rem;
+    line-height: 2;
 }
 
+.intro{
+    font-size: 25px;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+
 .end{
-    padding-top: 26.5rem;
+    padding-top: 15rem;
+    line-height: 2.5;
+}
+
+.playlist h2{
+    font-size: 30px;
+}
+
+ul li{
+    list-style-type: none;
+    font-size: 20px;
+    padding: .5rem 0;
 }
 
 /* Main */
 
 .container{
-    width: 70%;
+    width: calc(100% - 300px);
 }
 
 .upgrade{
     width: 100%;
     height: 100px;
-    background-color: grey;
+    background-color: #141922;
     position: relative;
 }
 
@@ -56,7 +76,7 @@ header img{
     width: 22rem;
     height: 4.5rem;
     font-size: 20px;
-    margin: 1rem 1rem;
+    margin: 1rem .5rem;
     background-color: black;
     color: white;
     border: 2px solid white;
@@ -65,27 +85,54 @@ header img{
 
 .home{
     width: 100%;
-    height: 1000px;
+    height: 1300px;
     background-color: aquamarine;
 }
 
 .album{
     width: 100%;
-    height: 300px;
-    background-color: blueviolet;
-    margin: 2rem 1rem;
+    height: 400px;
+    background-color: #121701;
+    border: 1px solid blue;
+}
+
+.titles{
+    width: 100%;
+    height: 100px;
+    background-color: white;
 }
 
 /* Navbar */
 
-.fixed{
+.taskbar{
     width: 100%;
     height: 200px;
-    background-color: black;
+    position: fixed;
+    bottom: 0;
+    background-color: #222222;
 }
 
-.container-nav{
+.container-task{
     width: calc(100% / 3);
     height: 200px;
     border: 3px solid red;
+}
+
+
+/* Media */
+
+@media screen and (min-width: 992px){}
+
+
+@media screen and (min-width: 768px){}
+
+
+@media screen and (max-width: 576px){
+    .container-header{
+        width: 80px;
+    }
+
+    .container{
+        width: calc(100% - 80px);
+    }
 }
