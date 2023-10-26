@@ -57,7 +57,7 @@ header img{
 }
 
 .end{
-    padding-top: 23rem;
+    padding-top: 22rem;
     line-height: 2.5;
 }
 
@@ -67,7 +67,7 @@ header img{
 
 ul li{
     list-style-type: none;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .secondary-icons{
@@ -108,38 +108,47 @@ ul li{
 .home{
     width: 100%;
     height: 1300px;
-    background-color: aquamarine;
+    background-color: #141922;
+    padding: 0 1.5rem;
 }
 
 .album{
     width: 100%;
     height: 400px;
-    background-color: #141922;
-    border: 1px solid blue;
+    display: flex;
 }
 
 .titles{
     width: 100%;
     height: 100px;
-    background-color: #141922;
     text-align: center;
+    padding-top: 1rem;
 }
 
 .titles li{
     color: lightgray;
     display: inline;
-    margin: 1rem 2.5rem;
+    margin: 0 3rem;
 }
 
 .played{
-    width: calc(100% / 6);
-    height: 100%;
+    width: calc((100% / 2) - 1rem);
+    height: 90%;
     background-color: darkorchid;
+    display: flex;
+    margin: 0 .7rem;
 }
 
 .played img{
     width: 100%;
 }
+
+.titles-played{
+    color: white;
+    font-size: 35px;
+    padding-bottom: 2.5rem;
+}
+
 
 /* Navbar */
 
