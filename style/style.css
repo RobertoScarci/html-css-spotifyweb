@@ -226,15 +226,11 @@ ul li{
 .now-playing>img{
     width: 20%;
     margin-left: 1.5rem;
-    margin-right: 1.5rem;
 }
 
 .n-playing-text>*{
     display: block;
-}
-
-.n-playing-text>span, .settings>i{
-    color: var(--LightGrey);
+    margin-left: 1rem;
 }
 
 .settings>i{
@@ -243,15 +239,14 @@ ul li{
     margin-right: 2rem;
 }
 
-.active-volume::after, .player-bar-active::after{
-    content: "";
+.active-volume::after, 
+.player-bar-active::after{
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 50%;
     background-color: white;
     display: none;
     position: absolute;
-    right: -5px;
     transform: translateY(-4px);
 }
 
@@ -316,7 +311,7 @@ ul li{
 }
 
 .player-top>i{
-    font-size: 40px;
+    font-size: 50px;
     padding-bottom: 1rem;
     color: white;
 }
