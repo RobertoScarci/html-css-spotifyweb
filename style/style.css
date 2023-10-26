@@ -202,7 +202,7 @@ ul li{
 .now-playing{
     display: flex;
     align-items: center;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0;
 }
 
 .now-playing h1{
@@ -230,7 +230,7 @@ ul li{
 
 .n-playing-text>*{
     display: block;
-    margin-left: 1rem;
+    padding-left: 1rem;
 }
 
 .settings>i{
@@ -239,14 +239,16 @@ ul li{
     margin-right: 2rem;
 }
 
-.active-volume::after, 
-.player-bar-active::after{
+.active-volume::after,
+ .player-bar-active::after{
+    content: "";
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 50%;
     background-color: white;
     display: none;
     position: absolute;
+    right: 0;
     transform: translateY(-4px);
 }
 
