@@ -23,26 +23,26 @@ body{
 .container-sidebar{
     background-color: black;
     flex-direction: column;
-    width: 250px;
+    width: 200px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
   }
   
-  .logo-sidebar{
+.logo-sidebar{
     width: 80%;
     padding-top: 20px;
-    padding-left: 20px;
-    margin-bottom: 20px;
+    padding-left: 8px;
+    margin-bottom: 10px;
   }
   
-  .container-sidebar ul li a{
+.container-sidebar ul li a{
     text-decoration: none;
     color: #626262;
     vertical-align: middle;
   }
   
-  .container-sidebar ul li{
+.container-sidebar ul li{
     padding-left: 20px;
     margin-bottom: 20px;
     color: #626262;
@@ -50,31 +50,35 @@ body{
     list-style-type: none;
   }
   
-  .fx-hover-left:hover{
+.fx-hover-left:hover{
     border-left: 3px solid #adff2f;
     color: #ffffff;
   }
   
-  .fx-hover-left a:hover{
+.fx-hover-left a:hover{
     color: #ffffff;
   }
   
-  .icon-sidebar{
+.icon-sidebar{
     width: 10%;
     vertical-align: middle;
     margin-right: 5px;
   }
 
-  .footer-sidebar span{
+.footer-sidebar span{
     color: #626262;
   }
-  
+
+.titles-li{
+    font-size: 25px;
+    color: #ffffff;
+  }
 
 /* Main */
 
 .container{
-    width: calc(100% - 250px);
-    overflow: auto;
+    width: calc(100% - 200px);
+    overflow: scroll;
 }
 
 .upgrade{
@@ -116,21 +120,23 @@ body{
 
 .titles{
     width: 100%;
-    height: 100px;
+    height: 60px;
     text-align: center;
     padding-top: 1rem;
 }
 
 .titles li{
     color: lightgray;
+    font-size: 15px;
     display: inline;
-    margin: 0 3rem;
+    margin: 0 2rem;
 }
 
 .card{
-    width: calc(100% / 7);
+    width: calc(100% / 6);
     text-align: center;
     margin: 0 1rem;
+    margin-left: 0;
 }
 
 .hover-play{
@@ -149,27 +155,29 @@ body{
 
 .titles-played{
     color: white;
-    font-size: 30px;
+    font-size: 15px;
     padding-bottom: 2.5rem;
     padding-top: 3rem;
 }
 
 .titles-played h2{
     color: lightgray;
-    font-size: 30px;
+    font-size: 13px;
     padding-top: 1rem;
 }
 
 .card h1,
 .card h2{
     width: 100%;
+    font-size: 18px;
     text-align: center;
     color: white;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .card h2{
-    color: lightgray;
+    color: #626262;
+    font-size: 16px;
 }
 
 
