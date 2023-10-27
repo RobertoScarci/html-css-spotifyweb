@@ -20,74 +20,66 @@ body{
 
 /* header */
 
-.container-header{
-    width: 300px;
-    height: 100vh;
-    flex-direction: column;
+.container-sidebar{
     background-color: black;
-    color: lightgray;
-    padding: 1.5rem 1.7rem;
-    line-height: 2.3rem;
-}
-
-.secondary-img{
-    display: none;
-}
-
-header img{
+    flex-direction: column;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo-sidebar{
     width: 80%;
-}
-
-.playlist{
-    padding-top: 2rem;
-    line-height: 2;
-}
-
-.intro{
-    padding: 1rem .3rem;
-    line-height: 2;
-}
-
-.intro li{
-    font-size: 27px;
-}
-
-.intro i{
-    font-size: 35px;
-}
-
-.end{
-    padding-top: 21rem;
-    line-height: 2.5;
-}
-
-.playlist h2{
-    font-size: 30px;
-}
-
-ul li{
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container-sidebar ul li a{
+    text-decoration: none;
+    color: #626262;
+    vertical-align: middle;
+  }
+  
+  .container-sidebar ul li{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #626262;
+    vertical-align: middle;
     list-style-type: none;
-    font-size: 22px;
-}
+  }
+  
+  .fx-hover-left:hover{
+    border-left: 3px solid #adff2f;
+    color: #ffffff;
+  }
+  
+  .fx-hover-left a:hover{
+    color: #ffffff;
+  }
+  
+  .icon-sidebar{
+    width: 10%;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
 
-.secondary-icons{
-    display: none;
-}
-
-.padding-side{
-    padding: 1rem .7rem;
-}
+  .footer-sidebar span{
+    color: #626262;
+  }
+  
 
 /* Main */
 
 .container{
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     overflow: auto;
 }
 
 .upgrade{
     width: 100%;
-    height: 110px;
+    height: 60px;
     background-color: #121701;
     position: relative;
 }
@@ -96,13 +88,13 @@ ul li{
     position: absolute;
     right: 0;
     top: 0;
-    width: 22rem;
-    height: 4.3rem;
-    font-size: 20px;
-    margin: 1rem .5rem;
+    width: 11rem;
+    height: 2.5rem;
+    font-size: 12px;
+    margin: .5rem .5rem;
     background-color: black;
     color: white;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 50px 50px 50px 50px;
 }
 
@@ -185,7 +177,7 @@ ul li{
 
 .taskbar{
     width: 100%;
-    height: 200px;
+    height: 90px;
     position: fixed;
     bottom: 0;
     background-color: #222222;
@@ -206,17 +198,18 @@ ul li{
 }
 
 .now-playing h1{
-    font-size: 35px;
+    font-size: 20px;
     color: white;
 }
 
 .now-playing h2{
     color: grey;
+    font-size: 15px;
 }
 
 .playing-icons{
     padding-left: 3rem;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .playing-icons i{
@@ -224,19 +217,19 @@ ul li{
 }
 
 .now-playing>img{
-    width: 20%;
+    width: 10%;
     margin-left: 1.5rem;
 }
 
 .n-playing-text>*{
     display: block;
-    padding-left: 1rem;
+    padding-left: .5rem;
 }
 
 .settings>i{
     color: white;
-    font-size: 35px;
-    margin-right: 2rem;
+    font-size: 15px;
+    margin-right: 1.5rem;
 }
 
 .active-volume::after,
@@ -270,7 +263,7 @@ ul li{
     display: flex;
     padding-right: 20px;
     align-items: center;
-    width: 20%;
+    width: 30%;
     justify-content: flex-end;
     width: 300px;
 }
@@ -287,7 +280,7 @@ ul li{
     position: absolute;
     left: 0;
     top: 0;
-    width: 1vw;
+    width: 2vw;
     height: 0.6rem;
     background-color: white;
     border-radius: 10px;
@@ -297,10 +290,8 @@ ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 200px;
-    width: 60%;
-    padding: 3rem 2rem;
-    margin-right: 10rem;
+    min-width: 100px;
+    width: 100%;
 }
 
 .player-top{
@@ -313,24 +304,24 @@ ul li{
 }
 
 .player-top>i{
-    font-size: 50px;
+    font-size: 30px;
     padding-bottom: 1rem;
     color: white;
 }
 
 .player-bot{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 }
 
 .player-bot > span{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .player-bar{
-    width: 35vw;
+    width: 30vw;
     height: 0.5rem;
     border-radius: 10px;
     background-color: gray;
@@ -338,7 +329,7 @@ ul li{
 }
 
 .player-bar-active{
-    width: 90px;
+    width: 70px;
     height: 0.5rem;
     border-radius: 10px;
     background-color: white;
