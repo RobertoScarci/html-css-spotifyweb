@@ -23,10 +23,11 @@ body{
 .container-sidebar{
     background-color: black;
     flex-direction: column;
+    flex-direction: column;
+    height: 90vh;
     width: 200px;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
-    justify-content: space-between;
   }
   
 .logo-sidebar{
@@ -34,13 +35,13 @@ body{
     padding-top: 20px;
     padding-left: 8px;
     margin-bottom: 10px;
-  }
+}
   
 .container-sidebar ul li a{
     text-decoration: none;
     color: #626262;
     vertical-align: middle;
-  }
+}
   
 .container-sidebar ul li{
     padding-left: 20px;
@@ -48,42 +49,55 @@ body{
     color: #626262;
     vertical-align: middle;
     list-style-type: none;
-  }
+}
+
+.fx-hover-left{
+    font-size: 13px;
+}
   
 .fx-hover-left:hover{
     border-left: 3px solid #adff2f;
     color: #ffffff;
-  }
+}
   
 .fx-hover-left a:hover{
     color: #ffffff;
-  }
+}
   
 .icon-sidebar{
     width: 10%;
     vertical-align: middle;
     margin-right: 5px;
-  }
+}
 
 .footer-sidebar span{
     color: #626262;
-  }
+}
+
+.footer-sidebar hr{
+    margin: .4rem 0;
+}
 
 .titles-li{
-    font-size: 25px;
+    font-size: 20px;
     color: #ffffff;
-  }
+}
+
+.none{
+    display: none;
+}
 
 /* Main */
 
 .container{
-    width: calc(100% - 200px);
-    overflow: scroll;
+    width: calc(100vw - 200px);
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .upgrade{
     width: 100%;
-    height: 60px;
+    height: 70px;
     background-color: #121701;
     position: relative;
 }
@@ -95,7 +109,7 @@ body{
     width: 11rem;
     height: 2.5rem;
     font-size: 12px;
-    margin: .5rem .5rem;
+    margin: .8rem .5rem;
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -277,7 +291,7 @@ body{
 }
 
 .volume{
-    width: 10vw;
+    width: 12vw;
     background-color: grey;
     height: 0.6rem;
     border-radius: 10px;
@@ -288,7 +302,7 @@ body{
     position: absolute;
     left: 0;
     top: 0;
-    width: 2vw;
+    width: 5vw;
     height: 0.6rem;
     background-color: white;
     border-radius: 10px;
@@ -359,15 +373,34 @@ body{
 @media screen and (min-width: 992px){}
 
 
-@media screen and (min-width: 768px){}
+@media screen and (min-width: 768px){
+    .card{
+        width: calc(100% / 4);
+        text-align: center;
+    }
+}
 
 
 @media screen and (max-width: 576px){
-    .container-header{
-        width: 90px;
+    .container-sidebar{
+        width: 40px;
     }
 
-    .spotify-logo{
+    .none{
+        display: inline;
+    }
+
+    .inline{
+        display: none;
+    }
+
+    .none img{
+        width: 100%;
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    .logo-sidebar{
         display: none;
     }
 
@@ -401,12 +434,15 @@ body{
     }
 
     .container{
-        width: calc(100% - 90px);
+        width: calc(100% - 40px);
+    }
+
+    .album{
+        width: calc(100%b / 2);
     }
 
     .card{
         width: calc(100% / 2);
         text-align: center;
-        margin: 0 1rem;
     }
 }
