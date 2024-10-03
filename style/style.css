@@ -72,6 +72,11 @@ body{
 
 .footer-sidebar span{
     color: #626262;
+    &:hover{
+        color: white;
+        padding: .2rem;
+        border: 1px solid white;
+    }
 }
 
 .footer-sidebar hr{
@@ -190,7 +195,7 @@ body{
 }
 
 .card h2{
-    color: #626262;
+    color: #888787;
     font-size: 16px;
 }
 
