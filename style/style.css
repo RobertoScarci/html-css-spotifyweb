@@ -71,7 +71,7 @@ body{
 }
 
 .footer-sidebar span{
-    color: #9b9b9b; 
+    color: #9b9b9b;
     cursor:pointer;
   position:relative;
   padding:4px 2px;
@@ -86,7 +86,7 @@ body{
     height:10px;
     position:absolute;
     border :0px solid #ffffff;
-    transition:all 1s; 
+    transition:all 1s;
     } 
   &:after{
     top:-1px;
